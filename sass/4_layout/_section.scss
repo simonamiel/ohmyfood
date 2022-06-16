@@ -1,0 +1,14 @@
+/*Section for explore restaurants */
+.explore {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: $color-background;
+    &__title {
+        margin-bottom: 0;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+    }
+    
+}
