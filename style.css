@@ -397,6 +397,15 @@ h1 {
 .explore__text {
   font-weight: 300;
   font-size: 16px;
+  padding-bottom: 20px;
+}
+
+/*Button for explore restaurants*/
+.explore__button {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 0.8rem 1.2rem;
+  border-radius: 90px;
 }
 
 /*# sourceMappingURL=style.css.map */
