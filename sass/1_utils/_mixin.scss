@@ -1,0 +1,4 @@
+@mixin gradient-btn ($firstColor: $color-primary, $secondColor: $color-secondary) {
+    background-image: linear-gradient(0deg, $firstColor, $secondColor);
+    
+}

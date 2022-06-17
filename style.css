@@ -388,6 +388,7 @@ h1 {
 /*Section for explore restaurants */
 .explore {
   text-align: center;
+  height: 18rem;
   padding: 1.5rem;
   background-color: #F5F5F5;
 }
@@ -397,15 +398,17 @@ h1 {
 .explore__text {
   font-weight: 300;
   font-size: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
 }
 
 /*Button for explore restaurants*/
 .explore__button {
   text-decoration: none;
-  border: 1px solid black;
-  padding: 0.8rem 1.2rem;
+  padding: 1rem 1.2rem;
   border-radius: 90px;
+  color: #FFF;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, #9356dc, #FF79DA);
 }
 
 /*# sourceMappingURL=style.css.map */
