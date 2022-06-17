@@ -39,7 +39,9 @@
         border-radius: 1.25rem;
         margin-left: 10px;
         width: 100%;
-    }
+        box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.1);
+        }
+    
     &__icon {
         color: grey;
     }
@@ -48,4 +50,47 @@
         font-weight: 500;
     }
     
+}
+/*Section for restaurants */
+.restaurants {
+    background-color: $color-background-secondary;
+    padding: 2rem 1rem;
+}
+.cardsContainer {
+    @include flex-center;
+    width: 100%;
+}
+.card {
+    background-color: $color-background-primary;
+    border-radius: 1rem;
+    text-decoration: none;
+    position: relative;
+    &__img {
+        height: 190px;
+        width: 100%;
+        border: none;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    &__new {
+        background-color: $color-tertiary;
+        color: $color-text-new;
+        height: 1.8rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.5rem;
+        border-radius: 5px;
+        position: absolute;
+        top: 12px;
+        right: 0.75rem;
+    }
+    &__details {
+        @include flex-between;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    &__text {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: $color-text-general;
+        }
 }
