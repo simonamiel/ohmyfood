@@ -346,6 +346,10 @@ h1 {
   font-size: 24px;
 }
 
+h5 {
+  font-family: "Shrikhand";
+}
+
 /*Header whith logo*/
 .header {
   width: 100%;
@@ -452,13 +456,16 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .card {
   background-color: #FFF;
+  width: 100%;
   border-radius: 1rem;
   text-decoration: none;
   position: relative;
+  box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.1);
 }
 .card__img {
   height: 190px;
@@ -489,6 +496,34 @@ h1 {
   margin-top: 5px;
   margin-bottom: 5px;
   color: black;
+}
+.card__icon {
+  color: black;
+}
+
+/*Footer design here ! */
+.footer {
+  background-color: #333333;
+  color: #FFF;
+  padding: 1rem;
+}
+.footer__title {
+  font-weight: 100;
+  font-size: 17px;
+  margin-top: 13px;
+  margin-bottom: 15px;
+}
+.footer__container {
+  margin-bottom: 8px;
+}
+.footer__icon {
+  margin-right: 1rem;
+  width: 11px;
+  color: #FFF;
+}
+.footer__links {
+  text-decoration: none;
+  color: #FFF;
 }
 
 /*Button for explore restaurants*/
