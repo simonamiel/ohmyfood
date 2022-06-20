@@ -9,18 +9,25 @@
     justify-content: center;
     align-items: center;
 }
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 @mixin flex-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-@mixin columnFlexBetween {
+@mixin flex-end {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*Shadow decoration for box and cards*/
+@mixin shadow-card {
+    box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Mixin for hidden text from menus */
+@mixin hidden-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

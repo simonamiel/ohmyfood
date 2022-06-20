@@ -1,5 +1,7 @@
 /*Decoration of the explore button*/
 /*Positioning of flexbox*/
+/*Shadow decoration for box and cards*/
+/*Mixin for hidden text from menus */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 html {
@@ -535,6 +537,123 @@ h5 {
   background-color: #686868;
   background-image: linear-gradient(0deg, #9356dc, #FF79DA);
   box-shadow: 0px 1px 10px 1px rgba(104, 104, 104, 0.7);
+}
+
+/*For specific design on food menu only*/
+/*Header whith logo and arrow*/
+.header__arrow {
+  position: relative;
+}
+.header__arrow--arrow {
+  position: absolute;
+  left: 1.5rem;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+/*Design of menus from menus pages*/
+.imageMenu {
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  max-height: 32rem;
+}
+
+.menuCard {
+  margin: auto;
+  background-color: #F5F5F5;
+  margin-top: -4rem;
+  z-index: 1;
+  position: relative;
+  border-radius: 2rem 2rem 0 0;
+}
+.menuCard__title {
+  padding: 1rem 2rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuCard__titleText {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5rem;
+}
+.menuCard__icon {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu {
+  display: grid;
+}
+
+.subMenu {
+  width: 100%;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+.subMenu__title {
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+.subMenu__title::after {
+  content: "";
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.menuContent {
+  background-color: #FFF;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  display: flex;
+  box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  /*Check whith annimation*/
+}
+.menuContent__details {
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menuContent__title {
+  margin: 0;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menuContent__text {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menuContent__price {
+  padding-left: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.menuContent__check {
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
