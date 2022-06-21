@@ -99,3 +99,8 @@
     }
 
 }
+.btnpart {
+    @include flex-center;
+    padding: 3rem;
+}
+
