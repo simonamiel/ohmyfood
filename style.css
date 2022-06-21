@@ -501,7 +501,28 @@ h5 {
   color: black;
 }
 .card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   color: black;
+}
+.card__heart:hover {
+  position: absolute;
+  right: 0.75rem;
+  font-weight: bold;
+  height: 2rem;
+  width: 2rem;
+  background: -webkit-linear-gradient(0deg, #9356dc, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 1.2s;
 }
 
 /*Footer design here ! */
