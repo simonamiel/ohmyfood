@@ -32,12 +32,26 @@
         font-size: 1.5rem;
     }
     &__icon {
-        height: 2rem;
-        width: 2rem;
         @include flex-center;
         cursor: pointer;
-        position: relative;
     }
+    &__heart {
+            @include flex-center;
+            position: relative;
+            color: $color-text-general;
+            &:hover {
+                position: absolute;
+                right: 1.75rem;
+                font-weight: bold;
+                height: 2rem;
+                width: 2rem;
+                background: -webkit-linear-gradient(0deg, $color-primary, $color-secondary);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                transition: 1.2s;
+            }
+        }
 }
 .menu {
     display: grid;

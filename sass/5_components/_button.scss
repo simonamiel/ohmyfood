@@ -7,6 +7,10 @@
     background-color: $color-background-btn;
     @include gradient-btn;
     @include shadow-button;
+    transition-duration: 0.25s;
+    &:hover {
+        @include shadow-button-hover;
+    }
 }
 /*Button for ordering menus*/
 .commandBtn {
@@ -19,5 +23,9 @@
     background-color: $color-background-btn;
     @include gradient-btn;
     @include shadow-button;
+    transition-duration: 0.25s;
     cursor: pointer;
+    &:hover {
+            @include shadow-button-hover;
+        }
 }

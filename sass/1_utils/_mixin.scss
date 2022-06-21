@@ -28,6 +28,10 @@
 @mixin shadow-button {
     box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
 }
+@mixin shadow-button-hover {
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
+    filter: brightness(1.04);
+}
 
 /*Mixin for hidden text from menus */
 @mixin hidden-text {
