@@ -387,8 +387,14 @@ h5 {
   animation-fill-mode: both;
   z-index: 10000;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.loader__name {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 .loader__spinner {
   border-radius: 50px;
@@ -401,6 +407,7 @@ h5 {
   border-top-color: #9356DC;
   border-bottom-color: #9356DC;
   animation: spin 1.5s linear infinite;
+  margin-bottom: 20px;
 }
 .loader__spinner::before {
   position: absolute;
@@ -431,6 +438,11 @@ h5 {
   border-bottom-color: #FF79DA;
   opacity: 0.6;
   animation: spinreverse 2s linear infinite;
+}
+.loader__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #9356dc;
 }
 
 /*Header whith logo*/

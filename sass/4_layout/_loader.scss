@@ -9,7 +9,12 @@
     animation-delay: 1.75s;
     animation-fill-mode: both;
     z-index: 10000;
-    @include flex-center;
+    @include flex-column-center;
+    &__name {
+        font-family: $font-primary;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
     &__spinner {
         border-radius: 50px;
         border: 6px solid transparent;
@@ -21,6 +26,7 @@
         border-top-color: #9356DC;
         border-bottom-color: #9356DC;
         animation: spin 1.5s linear infinite;
+        margin-bottom: 20px;
         &::before {
             position: absolute;
             content: "";
@@ -51,6 +57,11 @@
             opacity: 0.6;
             animation: spinreverse 2s linear infinite;
         }
+    }
+    &__text {
+        font-family: $font-secondary;
+        font-size: 1.2rem;
+        color: $color-primary;
     }
 
 }
