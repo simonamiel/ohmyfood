@@ -6,7 +6,7 @@
     top: 0;
     background-color: hsla(0, 0%, 100%, .9);
     animation: loader .01s;
-    animation-delay: 1.75s;
+    animation-delay: 2.75s;
     animation-fill-mode: both;
     z-index: 10000;
     @include flex-column-center;

@@ -86,10 +86,11 @@
     @include shadow-card;
     overflow: hidden;
     cursor: pointer;
+    animation: 1s mealsappear;
+    animation-fill-mode: both;
     &__details {
         flex: 1;
-        @include hidden-text;
-        
+        @include hidden-text;  
     }
     &__title {
         margin: 0;
@@ -111,7 +112,11 @@
     &__check {
         background-color: $color-tertiary;
     }
-
+@for $i from 0 through 9 {
+    &:nth-child(#{$i}) {
+        animation-delay: 100ms * $i;
+    }
+}
 }
 .btnpart {
     @include flex-center;

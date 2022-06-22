@@ -27,6 +27,14 @@
     transform: rotate(-360deg);
   }
 }
+@keyframes mealsappear {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 html {
   line-height: 1.15;
   /* 1 */
@@ -383,7 +391,7 @@ h5 {
   top: 0;
   background-color: hsla(0deg, 0%, 100%, 0.9);
   animation: loader 0.01s;
-  animation-delay: 1.75s;
+  animation-delay: 2.75s;
   animation-fill-mode: both;
   z-index: 10000;
   display: flex;
@@ -782,6 +790,8 @@ h5 {
   box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: 1s mealsappear;
+  animation-fill-mode: both;
   /*Check whith annimation*/
 }
 .menuContent__details {
@@ -814,6 +824,36 @@ h5 {
 }
 .menuContent__check {
   background-color: #99E2D0;
+}
+.menuContent:nth-child(0) {
+  animation-delay: 0ms;
+}
+.menuContent:nth-child(1) {
+  animation-delay: 100ms;
+}
+.menuContent:nth-child(2) {
+  animation-delay: 200ms;
+}
+.menuContent:nth-child(3) {
+  animation-delay: 300ms;
+}
+.menuContent:nth-child(4) {
+  animation-delay: 400ms;
+}
+.menuContent:nth-child(5) {
+  animation-delay: 500ms;
+}
+.menuContent:nth-child(6) {
+  animation-delay: 600ms;
+}
+.menuContent:nth-child(7) {
+  animation-delay: 700ms;
+}
+.menuContent:nth-child(8) {
+  animation-delay: 800ms;
+}
+.menuContent:nth-child(9) {
+  animation-delay: 900ms;
 }
 
 .btnpart {
