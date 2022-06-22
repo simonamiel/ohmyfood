@@ -1,9 +1,11 @@
 @import "./sass/1_utils/variables";
 @import "./sass/1_utils/mixin";
+@import "./sass/1_utils/animations";
 
 @import "./sass/3_base/normalize";
 @import "./sass/3_base/typography";
 
+@import "./sass/4_layout/loader";
 @import "./sass/4_layout/header";
 @import "./sass/4_layout/nav";
 @import "./sass/4_layout/section";
