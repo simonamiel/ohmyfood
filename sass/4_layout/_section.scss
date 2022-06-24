@@ -76,6 +76,9 @@
     text-decoration: none;
     position: relative;
     @include shadow-card;
+    &:hover {
+        transform: scale(1.01);
+    }
     &__img {
         height: 190px;
         width: 100%;

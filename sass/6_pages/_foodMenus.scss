@@ -88,6 +88,7 @@
     cursor: pointer;
     animation: 1s mealsappear;
     animation-fill-mode: both;
+    opacity: 1;
     &__details {
         flex: 1;
         @include hidden-text;  
@@ -109,12 +110,36 @@
         @include flex-end;
     }
     /*Check whith annimation*/
-    &__check {
+    &__selection {
         background-color: $color-tertiary;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        @include flex-center;
+        transition-duration: 1s;
+    }
+    &:hover &__selection {
+        margin-right: -1rem;
+    }
+    &__check {
+        height: 1.7rem;
+        width: 1.7rem;
+        background-color: $color-background-primary;
+        border-radius: 90px;
+        @include flex-center;
+        transform: rotate(180deg);
+        transition-duration: 1s;
+    }
+    &:hover &__check {
+        transform: rotate(0deg);
+    }
+    &__icon {
+        color: $color-tertiary;
+        font-weight: bold;
     }
 @for $i from 0 through 9 {
     &:nth-child(#{$i}) {
         animation-delay: 100ms * $i;
+        
     }
 }
 }

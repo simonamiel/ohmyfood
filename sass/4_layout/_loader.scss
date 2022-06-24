@@ -5,10 +5,11 @@
     left: 0;
     top: 0;
     background-color: hsla(0, 0%, 100%, .9);
-    animation: loader .01s;
-    animation-delay: 2.75s;
-    animation-fill-mode: both;
     z-index: 10000;
+    animation: loader .01s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    
     @include flex-column-center;
     &__name {
         font-family: $font-primary;

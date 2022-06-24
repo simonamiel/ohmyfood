@@ -30,9 +30,11 @@
 @keyframes mealsappear {
   0% {
     transform: translateY(100%);
+    opacity: 0;
   }
   100% {
     transform: translateY(0%);
+    opacity: 1;
   }
 }
 html {
@@ -390,10 +392,10 @@ h5 {
   left: 0;
   top: 0;
   background-color: hsla(0deg, 0%, 100%, 0.9);
-  animation: loader 0.01s;
-  animation-delay: 2.75s;
-  animation-fill-mode: both;
   z-index: 10000;
+  animation: loader 0.01s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -575,6 +577,9 @@ h5 {
   text-decoration: none;
   position: relative;
   box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: scale(1.01);
 }
 .card__img {
   height: 190px;
@@ -792,6 +797,7 @@ h5 {
   cursor: pointer;
   animation: 1s mealsappear;
   animation-fill-mode: both;
+  opacity: 1;
   /*Check whith annimation*/
 }
 .menuContent__details {
@@ -822,8 +828,35 @@ h5 {
   justify-content: flex-end;
   align-items: flex-end;
 }
-.menuContent__check {
+.menuContent__selection {
   background-color: #99E2D0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 1s;
+}
+.menuContent:hover .menuContent__selection {
+  margin-right: -1rem;
+}
+.menuContent__check {
+  height: 1.7rem;
+  width: 1.7rem;
+  background-color: #FFF;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  transition-duration: 1s;
+}
+.menuContent:hover .menuContent__check {
+  transform: rotate(0deg);
+}
+.menuContent__icon {
+  color: #99E2D0;
+  font-weight: bold;
 }
 .menuContent:nth-child(0) {
   animation-delay: 0ms;
