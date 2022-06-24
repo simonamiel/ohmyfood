@@ -1,5 +1,6 @@
-/*Decoration of the explore button*/
+/*For using media queries and breakpoints on code*/
 /*Positioning of flexbox*/
+/*Decoration of the explore button*/
 /*Shadow decoration for box and cards*/
 /*Shadow decoration for button*/
 /*Mixin for hidden text from menus */
@@ -516,6 +517,20 @@ h5 {
 .tutorial {
   padding: 2.2rem 1rem;
 }
+@media screen and (min-width: 992px) {
+  .tutorial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .tutorial {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
 .tutorial__line {
   display: flex;
   align-items: center;
@@ -542,6 +557,11 @@ h5 {
   width: 100%;
   box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.1);
 }
+@media screen and (min-width: 992px) {
+  .tutorial__card {
+    width: 800px;
+  }
+}
 .tutorial__card:hover {
   background: rgba(147, 86, 220, 0.18);
 }
@@ -561,6 +581,13 @@ h5 {
   background-color: #F5F5F5;
   padding: 2rem 1rem;
 }
+@media screen and (min-width: 992px) {
+  .restaurants__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .cardsContainer {
   display: flex;
@@ -577,6 +604,11 @@ h5 {
   text-decoration: none;
   position: relative;
   box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 992px) {
+  .card {
+    width: 90%;
+  }
 }
 .card:hover {
   transform: scale(1.01);
